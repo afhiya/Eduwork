@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; }
+        body { padding: 20px; }
+        .container { max-width: 1200px; margin: auto; }
+        .section { margin-bottom: 40px; }
+        .row { display: flex; justify-content: space-between; gap: 20px; }
+        /* .column { flex: 1; } */
+        .navbar { display: flex; justify-content: space-between; align-items: center; padding: 10px 0; border-bottom: 1px solid #ddd; }
+        .nav-links { display: flex; gap: 20px; }
+        .box-container, .card-container { display: grid; gap: 20px; }
+        .box-container { grid-template-columns: repeat(3, 1fr); }
+        .card-container { grid-template-columns: repeat(3, 1fr); }
+        .box, .card { padding: 20px; border: 1px solid #ddd; text-align: center; border-radius: 5px; }
+        img { width: 100%; max-width: 600px; height: auto; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Section 1: Navbar -->
+        <div class="navbar">
+            <div class="column">
+                <h1>Judul</h1>
+            </div>
+            <div class="column nav-links">
+                <a href="#">Header</a>
+                <a href="#biodata">Biodata</a>
+                <a href="#portofolio">Portofolio</a>
+            </div>
+        </div>
+        
+        <!-- Section 2 -->
+        <div class="section row">
+            <div class="column">
+                <p>Ini adalah konten di sebelah kiri.</p>
+            </div>
+            <div class="column">
+                <img src="https://source.unsplash.com/600x400" alt="Gambar Unslash">
+            </div>
+        </div>
+        
+        <!-- Section 3 -->
+        <div class="section">
+            <h2 id="biodata">About Me</h2>
+            <div class="box-container">
+                <div class="box">FullName</div>
+                <div class="box">Bio Data</div>
+                <div class="box">Education</div>
+                <div class="box">Work Experience</div>
+                <div class="box">Porject</div>
+                <div class="box">Activities</div>
+            </div>
+        </div>
+        
+        <!-- Section 4 -->
+        <div class="section">
+            <h2 id="portofolio">Portofolio</h2>
+            <div class="card-container">
+                <div class="card">Card 1</div>
+                <div class="card">Card 2</div>
+                <div class="card">Card 3</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
